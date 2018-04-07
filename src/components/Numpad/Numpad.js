@@ -3,6 +3,7 @@ import './Numpad.css';
 import NumberBtn from './NumberBtn/NumberBtn';
 import DeleteBtn from './DeleteBtn/DeleteBtn';
 import ClearBtn from './ClearBtn/ClearBtn';
+import SubmitBtn from './SubmitBtn/SubmitBtn';
 
 const numpad = (props) => (
     <div className="Numpad">
@@ -21,6 +22,7 @@ const numpad = (props) => (
             <ClearBtn clicked={props.clear}/>
             <NumberBtn number="0" clicked={props.clicked} />
             <DeleteBtn clicked={props.del}/>
+            <SubmitBtn clicked={props.clear} />
         </div>
     </div>
 );

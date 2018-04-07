@@ -1,10 +1,12 @@
 .Numpad {
     max-width: 400px;
-    max-height: 500px;
+    max-height: 600px;
     min-width: 350px;
-    min-height: 400;
+    min-height: 500;
     background-color: darkred;
     padding: 2vmax;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 h1.Numpad {
@@ -26,6 +28,12 @@ h1.Numpad {
 
 #pad {
     display: grid;
-    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
+    grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
     grid-gap: 2px;
+}
+
+@media (max-width: 700px) {
+    .Numpad {
+        display: inline-block;
+    }
 }

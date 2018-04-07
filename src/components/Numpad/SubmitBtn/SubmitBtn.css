@@ -1,0 +1,23 @@
+button.SubmitBtn {
+    grid-row: 5;
+    grid-column: 1 / 4;
+    background-color: darkcyan;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-size: 2em;
+    color: white;
+    box-shadow: 0 2px 2px rgb(41, 39, 39);
+}
+
+button.SubmitBtn:hover {
+    background-color: rgb(5, 214, 214);
+    cursor: pointer;
+}
+
+button.SubmitBtn:focus {
+    outline: 0;
+}
+
+button.SubmitBtn:active {
+    background-color: darkcyan;
+}

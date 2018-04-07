@@ -1,0 +1,38 @@
+.Result {
+    background-color: salmon;
+    display: table-cell;
+    width: 100%;
+    height: 100vh;
+    vertical-align: middle;
+}
+
+.Result > h1 {
+    color: white;
+}
+
+.Result > img {
+    animation : pulse 1s infinite;
+}
+  
+@media (max-width: 700px) {
+    .Result {
+        display: inline-block;
+        max-height: 500px;
+    }
+
+    .Result > h1 {
+        padding: 10px;
+    }
+}
+
+@keyframes pulse {
+    from {
+        transform: translateY(2em);
+    }
+    50% {
+        transform: translateY(0em);
+    }
+    to {
+        transform: translateY(2em);
+    }
+}

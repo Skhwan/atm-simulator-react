@@ -1,6 +1,8 @@
 .App {
   text-align: center;
-  float: left;
+  background-color: darkred;
+  height: 100%;
+  vertical-align: middle;
 }
 
 .App-logo {

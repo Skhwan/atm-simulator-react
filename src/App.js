@@ -6,11 +6,13 @@ import './App.css';
 // import BtnWrapper from './components/BtnWrapper/BtnWrapper';
 // import NumberBtn from './components/NumberBtn/NumberBtn';
 import Numpad from './components/Numpad/Numpad';
+import Result from './components/Result/Result';
 
 class App extends Component {
 
   state = {
-    userInput: ""
+    userInput: "",
+    resultStr: "PLEASE ENTER DESIRED AMOUNT"
   }
 
   numberClickedHandler = (number) => {
@@ -37,21 +39,13 @@ class App extends Component {
 
   render() {
     return (
-      // <BtnWrapper>
-      //   <ImageButton src={piggyBankImg} alt="balance" title="Balance"/>
-      //   <ImageButton src={dispenseImg} alt="dispense" title="Dispense"/>
-      // </BtnWrapper>
       <div className="App">
-        <div float="left">
-          <Numpad 
-            userInput={this.state.userInput}
-            clicked={this.numberClickedHandler}
-            del={this.deleteNumberHandler}
-            clear={this.clearNumberHandler} />
-        </div>
-        <div float="left">
-          <h1>RESULT STRING HERE</h1>
-        </div>
+        <Numpad 
+          userInput={this.state.userInput}
+          clicked={this.numberClickedHandler}
+          del={this.deleteNumberHandler}
+          clear={this.clearNumberHandler} />
+        <Result result={this.state.resultStr} />
       </div>
     );
   }
