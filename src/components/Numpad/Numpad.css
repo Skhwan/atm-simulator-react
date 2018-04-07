@@ -1,0 +1,31 @@
+.Numpad {
+    max-width: 400px;
+    max-height: 500px;
+    min-width: 350px;
+    min-height: 400;
+    background-color: darkred;
+    padding: 2vmax;
+}
+
+h1.Numpad {
+    font-family: sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#input {
+    min-width: 300px;
+    margin: 10px;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 3px #ccc;
+    padding: 10px;
+    text-align: center;
+    font-size: 2em;
+}
+
+#pad {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
+    grid-gap: 2px;
+}

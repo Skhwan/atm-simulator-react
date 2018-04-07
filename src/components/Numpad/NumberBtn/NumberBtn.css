@@ -1,0 +1,22 @@
+.NumberBtn {
+    background-color: red;
+    width: 100%;
+    color: white;
+    font-family: sans-serif;
+    font-size: 1em;
+    box-shadow: 0 2px 2px rgb(41, 39, 39);
+    border-radius: 10px;
+}
+
+.NumberBtn:hover{
+    background-color: darkred;
+    cursor: pointer;
+}
+
+.NumberBtn:focus {
+    outline: 0;
+}
+
+.NumberBtn:active {
+    background-color: rgb(59, 0, 0);
+}
