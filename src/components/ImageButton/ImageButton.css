@@ -1,0 +1,20 @@
+.ImageButton {
+    background-color: red;
+    width: 30vw;
+    height: 30vw;
+    box-shadow: 5px 5px 5px #ccc;
+}
+
+.ImageButton h1 {
+    color: white;
+    font-size: 3vw;
+}
+
+.ImageButton img {
+    width: 60%;
+}
+
+.ImageButton:hover {
+    background-color: darkred;
+    cursor: pointer;
+}

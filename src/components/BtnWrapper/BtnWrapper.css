@@ -1,0 +1,11 @@
+.BtnWrapper {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100vw;
+}
+
+.BtnWrapper div {
+    display: inline-block;
+    margin: 2vw;
+}
