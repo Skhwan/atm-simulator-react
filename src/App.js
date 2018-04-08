@@ -60,6 +60,13 @@ class App extends Component {
               resultCode: result.data['responseCode'],
               key: Math.random()
             });
+          })
+          .catch(error => {
+            th.setState({
+              resultStr: "OUT OF SERVICE",
+              resultCode: "1",
+              key: Math.random()
+            });
           });
       this.clearNumberHandler();
     } else {
