@@ -10,11 +10,11 @@ This is a simple website created for atm-simulator project
 ### Prerequisites
 
 * npm or yarn
-* Running backend atm-simulator project
+* Running backend [ATM Simulator](https://github.com/Skhwan/atm-simulator/) project
 
 ### Running project on MAC OS X
 
-* Clone this project by running command below in command line
+* Clone and go to project by running the following command
 ```
 $ git clone git@github.com:Skhwan/atm-simulator-react.git
 $ cd atm-simulator
