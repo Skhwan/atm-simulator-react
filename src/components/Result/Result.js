@@ -1,12 +1,29 @@
 import React from 'react';
 import './Result.css';
-import cashImg from '../../assets/image/cash.png';
+import cashLogo from '../../assets/image/cash.png';
+import warningLogo from '../../assets/image/warning.png';
+import successLogo from '../../assets/image/success.png';
 
-const result = (props) => (
-    <div className="Result" >
-        <img src={cashImg} alt="Cash"/>
-        <h1>{props.result}</h1>
-    </div>
-);
+const result = (props) => {
+    let logo;
+    let id;
+    if("0" === props.resultCode){
+        id="success";
+        logo = successLogo;
+    }else if("1" === props.resultCode){
+        id="warning";
+        logo = warningLogo;
+    }else {
+        id="cash";
+        logo = cashLogo;
+    }
+
+    return (
+        <div className="Result" >
+            <img id={id} src={logo} alt="cash"/>
+            <h1>{props.resultStr}</h1>
+        </div>
+    )
+}
 
 export default result;

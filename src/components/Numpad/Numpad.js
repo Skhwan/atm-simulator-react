@@ -22,7 +22,7 @@ const numpad = (props) => (
             <ClearBtn clicked={props.clear}/>
             <NumberBtn number="0" clicked={props.clicked} />
             <DeleteBtn clicked={props.del}/>
-            <SubmitBtn clicked={props.clear} />
+            <SubmitBtn clicked={props.dispense} />
         </div>
     </div>
 );
